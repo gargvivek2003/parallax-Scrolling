@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for new</span>
+        Adventure</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Parallax scrolling Effects</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium voluptatum culpa, natus est cupiditate reprehenderit nulla repellat necessitatibus ab quasi asperiores non totam omnis aut sit aspernatur tenetur soluta!<br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum delectus consequatur iure modi cumque unde possimus voluptatem quam, ullam commodi omnis, reprehenderit, cupiditate officiis! Ad debitis non nostrum repellendus?<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque molestias, error voluptate officiis corporis quasi nihil modi odio repudiandae. Rerum cum porro ex minus, tempora voluptatem natus debitis vero blanditiis?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, obcaecati quos. Necessitatibus, optio corporis. Provident qui suscipit, quasi expedita at repellat vel distinctio dolores quidem, rerum minus? Nam, praesentium sunt.</p>
+    </div>
+
+    <script>
+        let text = document.getAnimations('text');
+        let bird1 = document.getAnimations('bird1');
+        let bird2 = document.getAnimations('bird2');
+        let btn = document.getAnimations('btn');
+        let rocks = document.getAnimations('rocks');
+        let forest = document.getAnimations('forest');
+        let water = document.getAnimations('water');
+        let header = document.getAnimations('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * -0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
