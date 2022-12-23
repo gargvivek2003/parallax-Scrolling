@@ -37,7 +37,6 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 #header ul li
 {
@@ -49,6 +48,7 @@ body
     text-decoration: none;
     padding: 6px 15px;
     color: #094b65;
+    border-radius: 20px;
 }
 #header ul li a:hover,
 #header ul li a:active
@@ -96,7 +96,7 @@ section #text
     font-family: 'Rancho', cursive;
     transform: translateY(-50%);
 }
-section#text span
+section #text span
 {
     font-size: 0.2em;
     letter-spacing: 2px;
@@ -115,13 +115,13 @@ section#text span
     font-weight: 500;
     letter-spacing: 2px;
     border-radius: 40px;
-    transform: translateY(100px);
+    transform: translateY(100px)
 }
 .sec
 {
     position: relative;
     padding: 100px;
-    background: #094b65;
+    background: #21baba;
 }
 .sec h2
 {
